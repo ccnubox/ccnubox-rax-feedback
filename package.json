@@ -12,7 +12,8 @@
     "rax-text": "^0.5.4",
     "rax-textinput": "^0.6.5",
     "rax-touchable": "^0.6.5",
-    "rax-view": "^0.5.4"
+    "rax-view": "^0.5.4",
+    "universal-toast": "^0.6.5"
   },
   "devDependencies": {
     "rax-scripts": "^0.5.4",

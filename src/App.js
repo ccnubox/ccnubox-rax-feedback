@@ -5,6 +5,7 @@ import styles from './App.css';
 import TextInput from 'rax-textinput';
 import Touchable from 'rax-touchable';
 import feedbackService from './services/index';
+import Toast from 'universal-toast';
 // const native = require("@weex-module/test");
 
 class App extends Component {
@@ -21,7 +22,7 @@ class App extends Component {
       "feedback": this.state.content
     }
     feedbackService.postFeedback(data).then(res => {
-      // 
+      Toast.show('反馈成功', Toast.SHORT)
     })
   };
   onContactChange = () => {

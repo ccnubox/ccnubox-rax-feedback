@@ -1,0 +1,61 @@
+.app {
+  flex: 1;
+  align-items: center;
+  width: 750;
+  height: 1200;
+  background-color: #efeff4;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  margin-top: 168;
+  width: 630;
+  height: 850;
+  background-color: #ffffff;
+}
+
+.contactBox {
+  border-bottom: 2 solid #efeff4;
+  width: 630;
+  height: 80;
+  flex-direction: row;
+}
+
+.contactTip {
+  width: 170;
+  height: 80;
+  border-right: 2 solid #efeff4;
+}
+
+.contactInput {
+  flex: 1;
+  justify-content: flex-start;
+  height: 80;
+}
+
+.fontSize {
+  font-size: 28;
+}
+
+.tipText {
+  color: #6767fa;
+}
+
+.sendText {
+  color: #feb75a;
+}
+
+.inputContent {
+  width: 630;
+  height: 688;
+  padding: 15;
+}
+.submitBox {
+  border-top: 2 solid #efeff4;
+  width: 630;
+  height: 80;
+}

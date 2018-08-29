@@ -5,7 +5,7 @@ const feedbackService = {
     return request({
       method: "POST",
       url: "https://ccnubox.muxixyz.com/api/feedback/",
-      data: data
+      body: data
     });
   }
 };

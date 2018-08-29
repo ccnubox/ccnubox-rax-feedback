@@ -1,4 +1,4 @@
-import {createElement, Component} from 'rax';
+import { createElement, Component } from 'rax';
 import View from 'rax-view';
 import Text from 'rax-text';
 import styles from './App.css';
@@ -45,10 +45,10 @@ class App extends Component {
               <Text style={[styles.tipText, styles.fontSize]}>联系方式</Text>
             </View>
             <TextInput
-            value={this.state.contact}
-            ref="input"
-            style={[styles.contactInput, styles.fontSize]}
-            onChange={this.onContactChange}
+              value={this.state.contact}
+              ref="input"
+              style={[styles.contactInput, styles.fontSize]}
+              onChange={this.onContactChange}
             />
           </View>
           <TextInput
@@ -58,7 +58,7 @@ class App extends Component {
             multiline={true}
             ref="input"
             style={[styles.inputContent, styles.fontSize]}
-            />
+          />
           <Touchable onPress={this.sendFeedback} style={[styles.submitBox, styles.center]}>
             <Text style={[styles.fontSize, styles.sendText]}>发送</Text>
           </Touchable>

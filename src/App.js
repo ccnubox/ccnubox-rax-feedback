@@ -29,6 +29,7 @@ class App extends Component {
       Toast.show("反馈成功，感谢您的配合", Toast.SHORT);
       native.back();
     }).catch(e => {
+      native.reportInsightApiEvent("sendFeedback", "error", JSON.stringify(e));
       alert(JSON.stringify(e))
     })
   };
@@ -55,6 +56,7 @@ class App extends Component {
               value={this.state.contact}
               ref="input"
               style={[styles.contactInput, styles.fontSize]}
+              onInput={this.onContactChange}
               onChange={this.onContactChange}
               placeholder="请填写您联系方式（电话/QQ）"
             />
@@ -62,6 +64,7 @@ class App extends Component {
           <TextInput
             placeholder="请填写您的意见，欢迎加入华师匣子交流群 576225292 反馈您的问题"
             value={this.state.content}
+            onInput={this.onContentChange}
             onChange={this.onContentChange}
             multiline={true}
             ref="input"
